@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: alkacostapipelinesjavascriptdocker 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: alkacostapipelinesjavascriptdocker 
+    spec:
+      containers:
+        - name: alkacostapipelinesjavascriptdocker 
+          image: 23714aydevopsacr.azurecr.io/alkacostapipelinesjavascriptdocker
+          ports:
+          - containerPort: 8080
